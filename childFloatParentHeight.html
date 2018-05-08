@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .parent {
+            border:1px solid black;
+            padding:10px;
+        }
+        .clear {
+            clear:both;
+        }
+        .child {
+            float:left;
+            width: 200px;
+            height: 100px;
+            border:1px solid red;
+        }
+
+        .parent2 {
+            border:1px solid black;
+            padding:10px;
+            overflow: hidden;
+        }
+        .child2 {
+            float:left;
+            width: 200px;
+            height: 100px;
+            border:1px solid red;
+        }
+
+        .parent3 {
+            border:1px solid black;
+            padding:10px;
+        }
+        .child3 {
+            float:left;
+            width: 200px;
+            height: 100px;
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <span>/*clear:both清除浮动*/</span>
+    <div class = "parent">
+        <div class = "child"></div>
+        <div class="clear"></div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <span>/*父级div定义 overflow:hidden*/</span>
+    <div class = "parent2">
+        <div class = "child2"></div>
+    </div>
+
+    <br/>
+    <br/>
+    <br/>
+    <div class = "parent3">
+        <div class = "child3"></div>
+    </div>
+</body>
+</html>
